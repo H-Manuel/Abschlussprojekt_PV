@@ -1,6 +1,5 @@
-function [outputArg1,outputArg2] = Stundenwinkel(inputArg1,inputArg2)
+function stundenwinkel = Stundenwinkel(t)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
-outputArg1 = inputArg1;
-outputArg2 = inputArg2;
+stundenwinkel=15*(t-12); %Stundenwinkel
 end

@@ -1,6 +1,6 @@
-function [outputArg1,outputArg2] = Hoehenwinkel(inputArg1,inputArg2)
+function a = Hoehenwinkel(phi, delta, t)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
-outputArg1 = inputArg1;
-outputArg2 = inputArg2;
+sin_a=@(t) (sind(phi)*sind(delta)+cosd(phi)*cosd(delta)*cosd(15*(t-12)));
+a = asind(sin_a(t)); % Höhenwinkel alpha
 end
