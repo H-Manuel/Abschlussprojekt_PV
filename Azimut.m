@@ -1,6 +1,8 @@
-function [outputArg1,outputArg2] = Azimut(inputArg1,inputArg2)
+function [az] = Azimut(delta, a, phi)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
-outputArg1 = inputArg1;
-outputArg2 = inputArg2;
+
+cosaz=(sind(delta)-sind(a)*sind(phi))./(cosd(a)*cosd(phi));
+az=real(acosd(cosaz)); % Azimut az (Winkel zur Nordrichtung)
+
 end
