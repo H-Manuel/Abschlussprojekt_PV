@@ -1,0 +1,2 @@
+# Abschlussprojekt_PV
+Ausrichtung einer Photovoltaikanlage
