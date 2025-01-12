@@ -1,6 +1,11 @@
 function taglaenge = Taglaenge(phi)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+% Berechnet und visualisiert die Taglänge (Sonnenstunden) im Jahresverlauf.
+%
+% Eingabe:
+%   phi - Geographische Breite in Grad (z. B. 48.1 für München).
+% Ausgabe:
+%   taglaenge - Vektor mit der Taglänge (in Stunden) für jeden Tag des Jahres.
+%
 t=0:1:24;
 taglaenge = zeros(1, 365); % Platzhalter für die Taglängen
 for doy=1:365
