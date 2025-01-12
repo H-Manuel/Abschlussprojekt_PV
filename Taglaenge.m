@@ -16,7 +16,12 @@ for doy=1:365
 end
     plot(1:365,taglaenge)
     xlim([1,365]);
-    xlabel('Tag des Jahres');
+    tage_pro_monat = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    tage_am_monat_ende = cumsum(tage_pro_monat);
+    xticks(tage_am_monat_ende);
+    months = {'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'};
+    xticklabels(months);
+    xlabel('Monate');
     ylabel('Taglänge (Stunden)');
     title('Taglänge über das Jahr');
     grid on;
