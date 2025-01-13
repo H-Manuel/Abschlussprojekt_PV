@@ -10,11 +10,5 @@ function a = Hoehenwinkel(phi, delta, t)
 %
 sin_a=@(t) (sind(phi)*sind(delta)+cosd(phi)*cosd(delta)*cosd(15*(t-12)));
 a = asind(sin_a(t)); % Höhenwinkel alpha
-plot(t,a)
-xlabel("Zeit [h]");
-ylabel("Höhenwinkel [°]");
-title("Höhenwinkel der Sonne über den Tagesverlauf");
-grid on;
-ylim([-50 50]);
-xlim([0 24]);
+
 end

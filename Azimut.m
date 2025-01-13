@@ -11,10 +11,5 @@ function [az] = Azimut(delta, a, phi,t)
 %
 cosaz=(sind(delta)-sind(a)*sind(phi))./(cosd(a)*cosd(phi));
 az=real(acosd(cosaz)); % Azimut az (Winkel zur Nordrichtung)
-plot(t,az)
-xlabel("Zeit [h]");
-ylabel("Azimut [°]");
-title("Winkel der Sonne zur Nordrichtung über den Tagesverlauf");
-grid on;
-xlim([0 24]);
+
 end
