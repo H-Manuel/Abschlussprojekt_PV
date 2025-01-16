@@ -11,7 +11,6 @@ function [optimal_orientations, energy_year] = Fixiert_optimal_ausgerichtet(phi,
 %   improvement_factor - Verbesserungsfaktor gegenüber einer horizontalen
 %   Anlage 
 t=0:1:24;
-optimal_orientations = zeros(4, 2); % 4 Tage, jeweils Beta und Azimut
 optimal_orientations(1, :) = Ausrichtung(phi, tag1, t);
 optimal_orientations(2, :) = Ausrichtung(phi, tag2, t);
 optimal_orientations(3, :) = Ausrichtung(phi, tag3, t);
