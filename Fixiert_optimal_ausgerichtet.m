@@ -10,7 +10,7 @@ function [optimal_orientations, energy_year] = Fixiert_optimal_ausgerichtet(phi,
 %   Ausrichtung über ein Jahr gesehen ist.
 %   improvement_factor - Verbesserungsfaktor gegenüber einer horizontalen
 %   Anlage 
-t=0:1:24;
+t=1:1:24;
 optimal_orientations(1, :) = Ausrichtung(phi, tag1, t);
 optimal_orientations(2, :) = Ausrichtung(phi, tag2, t);
 optimal_orientations(3, :) = Ausrichtung(phi, tag3, t);
@@ -83,7 +83,7 @@ function [optimal_orientation, energy] = Ausrichtung_Jahr(phi, t)
 
 
 % Matrix, die alle Sonnenvektoren über das Jahr speichert (3xN für jeden Tag)
-sun_vector = zeros(3, 25, 365);  % 3x24x365 Matrix 
+sun_vector = zeros(3, 24, 365);  % 3x24x365 Matrix 
 
 
 
@@ -91,6 +91,7 @@ sun_vector = zeros(3, 25, 365);  % 3x24x365 Matrix
 
 %%Warum hier 25
 %%Vektor sonne semicolons
+%%in der main besser darstellen und eventuell visualisierung
 
 
 

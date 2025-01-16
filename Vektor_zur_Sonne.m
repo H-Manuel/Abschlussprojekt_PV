@@ -11,5 +11,5 @@ function sonnen_vektor = Vektor_zur_Sonne(breite, doy, zeit)
     sx = cosd(hoehenwinkel) .* cosd(azimutwinkel);
     sy = cosd(hoehenwinkel) .* sind(azimutwinkel);
     sz = sind(hoehenwinkel);
-    sonnen_vektor = [sx, sy, sz];
+    sonnen_vektor = [sx; sy; sz];
 end
