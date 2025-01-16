@@ -9,10 +9,9 @@ function jahres_energie = Vertikal_nach_Sueden_ausgerichtet(phi)
     energie_pro_tag = zeros(1, length(monate)); % Energieumrechnung pro Tag in den vier Monaten
 
     for i = 1:length(monate)
+
         datum = datetime(2025, monate(i), tages(i)); % Erstelle ein Datum
         Doy = day(datum, 'dayofyear'); % Extrahiere den Tag des Jahres
-
-        %doy berechnen!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
         s = Vektor_zur_Sonne(phi, Doy,zeiten); % vektor zur Sonne
 
