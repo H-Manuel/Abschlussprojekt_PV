@@ -40,6 +40,7 @@ for d = 1:numel(days)
  monthly_energies(d) = daily_energy;
  annual_energy = annual_energy +daily_energy;
 %Test
+%Test
 end
 
 
