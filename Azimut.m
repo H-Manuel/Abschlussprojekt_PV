@@ -11,5 +11,6 @@ function [az] = Azimut(delta, a, phi,t)
 %
 cosaz=(sind(delta)-sind(a)*sind(phi))./(cosd(a)*cosd(phi));
 az=real(acosd(cosaz)); % Azimut az (Winkel zur Nordrichtung)
+az(t > 12) = 360 - az(t > 12); % Nachmittagskorrektur
 
 end
