@@ -41,6 +41,7 @@ for d = 1:numel(days)
  annual_energy = annual_energy +daily_energy;
 %Test
 %Test
+ksjlkfjsdfs
 end
 
 
